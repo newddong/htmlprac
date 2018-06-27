@@ -29,30 +29,30 @@ window.onload = function(){
 	
 	
 	
-//	box.addEventListener("mousemove", function(e){
-//		document.getElementsByTagName("p")[0].innerHTML = e.layerX+"px";
-//		document.getElementsByTagName("p")[1].innerHTML = e.layerY+"px";
-//		
-//		var d = document.createElement("div");
-//		d.style.backgroundColor = "black";
-//		d.style.width = "5px";
-//		d.style.height = "5px";
-//		d.style.position = "absolute";
-//		d.style.top = e.layerY + "px";
-//		d.style.left = e.layerX + "px";
-//		box.appendChild(d);
-//		
-//	})
-	
-	
-	
-	box.addEventListener("click",function(){
+	box.addEventListener("mousemove", function(e){
+		document.getElementsByTagName("p")[0].innerHTML = e.layerX+"px";
+		document.getElementsByTagName("p")[1].innerHTML = e.layerY+"px";
 		
+		var d = document.createElement("div");
+		d.style.backgroundColor = "black";
+		d.style.width = "5px";
+		d.style.height = "5px";
+		d.style.position = "absolute";
+		d.style.top = e.layerY + "px";
+		d.style.left = e.layerX + "px";
+		box.appendChild(d);
 		
-		box.firstChild.style.transform = "rotate(10deg)";
-		box.children[0].style.width = "1px";
-		box.nextSibling.nextSibling.firstChild.textContent = parseInt(box.firstChild.style.transform);
 	})
+	
+	
+	
+//	box.addEventListener("click",function(){
+//		
+//		
+//		box.firstChild.style.transform = "rotate(10deg)";
+//		box.children[0].style.width = "1px";
+//		box.nextSibling.nextSibling.firstChild.textContent = parseInt(box.firstChild.style.transform);
+//	})
 	
 	
 	
