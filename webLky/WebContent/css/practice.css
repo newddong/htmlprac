@@ -137,10 +137,12 @@
 .head .menubar .menu2>ul>li>div>ul>li{
 	list-style:none;
 	padding:10px;
+	color:#777;
+	font-weight:normal;
 	
 }
 
-.head .menubar .menu2>ul>li:after{
+.select:after{
 	position:absolute;
 	background:#1c1c1c;
 	top:45px;
