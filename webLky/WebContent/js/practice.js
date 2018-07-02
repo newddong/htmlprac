@@ -6,6 +6,7 @@
 window.onload = function(){
 	
 	var list = document.getElementsByClassName("menu2")[0].children[0];
+	var onoff = false;
 	
 	for(var i=0;i<list.children.length;i++){
 	
@@ -15,6 +16,7 @@ window.onload = function(){
 	list.children[j].children[0].style.display = "unset";
 	list.children[j].style.color = "#1c1c1c";
 	list.children[j].style.fontWeight = "bold";
+	onoff = true;
 	
 	})
 	
